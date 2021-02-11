@@ -19,7 +19,6 @@ namespace AnA_Site.Pages
 
         public void OnGet()
         {
-
         }
     }
 }
