@@ -1,7 +1,12 @@
 ﻿@page
-@model IndexModel
+@model SearchModel
 @{
     ViewData["Title"] = "Home page";
 }
 
 <p>Search for videos here: </p>
+
+<form method="get">
+    <input type="search" placeholder="Search here..." asp-for="Search">
+    <button type="submit" text="Submit" asp-page="Search"></button>
+</form>
