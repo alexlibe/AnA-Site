@@ -11,7 +11,6 @@ namespace AnA_Site.Pages
         [Required(ErrorMessage = "Search bar must have something")]
         [BindProperty(SupportsGet = true)]
         public string Search { get; set; }
-
         public string[] Videos { get; private set; }
 
         private readonly ISearchService _searchService;

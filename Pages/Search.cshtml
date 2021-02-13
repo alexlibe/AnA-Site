@@ -8,10 +8,13 @@
 <form method="get">
     <span asp-validation-for="Search" style="color: red; display: block;"></span>
     <input type="search" placeholder="Search here..." asp-for="Search">
-    <button type="submit" text="Submit" asp-page="Search"></button>
+    <button type="submit" asp-page="Search">Submit</button>
 </form>
 
 @if (Model.Videos != null)
 {
-    <p>@Model.Videos.Length</p>
+    for (int i = 0; i < Model.Videos.Length; i++)
+    {
+        <p>@Model.Videos[i]</p>
+    }
 }

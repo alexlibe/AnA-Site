@@ -4,9 +4,10 @@
     ViewData["Title"] = "Home page";
 }
 
+<p>Welcome to Austin and Alex's Video Site!</p>
 <p>Search for videos here: </p>
 
 <form method="get">
     <input type="search" placeholder="Search here..." asp-for="Search">
-    <button type="submit" text="Submit" asp-page="Search"></button>
+    <button type="submit" asp-page="Search">Submit</button>
 </form>
