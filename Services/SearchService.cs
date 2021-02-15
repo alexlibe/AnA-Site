@@ -1,3 +1,4 @@
+using System.IO;
 using AnA_Site.Interfaces;
 
 namespace AnA_Site.Services
@@ -6,7 +7,7 @@ namespace AnA_Site.Services
     {
         public string[] Search(string search)
         {
-            return new[] {"Stuff", "hello", "Movies"};
+            return Directory.GetFiles("Videos/");
         }
     }
 }

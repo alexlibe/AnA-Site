@@ -354,3 +354,6 @@ MigrationBackup/
 
 # Server Videos
 Videos/
+
+# Code
+.vscode/

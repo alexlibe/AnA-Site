@@ -23,7 +23,10 @@ namespace AnA_Site
         {
             services.AddScoped<ISearchService, SearchService>();
             
-            services.AddRazorPages();
+            services.AddRazorPages(options =>
+            {
+                options.Conventions.AddPageRoute("/Video", "{name}");
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
